@@ -16,3 +16,154 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+body {
+  font-family: "Libertinus Mono", monospace;
+    background: #F8AD7C;
+    background: linear-gradient(350deg,rgba(248, 173, 124, 1) 0%, rgba(226, 222, 233, 1) 55%, rgba(225, 225, 240, 1) 65%, rgba(222, 232, 255, 1) 73%);
+  }
+
+h1 {
+  font-family: "Libertinus Mono", monospace;
+  margin-top: 10px;
+}
+
+.title-main {
+text-align: center;
+}
+.text {
+  text-align: center;
+}
+.gallery {
+  padding: 50px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    padding: 100px;
+    padding-top: 50px;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery {
+    padding: 156px;
+    padding-top: 100px;
+    gap: 24px;
+  }
+}
+
+.sl-wrapper {
+  background-color: #2E2F42CC;
+}
+
+.gallery-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: -1px 5px 25px 1px rgba(132,141,161,0.81);
+  -webkit-box-shadow: -1px 5px 25px 1px rgba(132,141,161,0.81);
+  -moz-box-shadow: -1px 5px 25px 1px rgba(132,141,161,0.81);
+}
+
+.feedback-form {
+  max-width: 408px;
+  margin: 10px auto;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+padding: 24px;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: start;
+border-radius: 4px;
+background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  
+}
+
+label {
+display: flex;
+flex-direction: column;
+}
+
+input {
+  height: 40px;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus
+ {
+  border: 1px solid #000000;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+input,
+textarea {
+  width: 360px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin: 10px auto;
+  outline: none;
+}
+
+input, 
+textarea,
+label, 
+.feedback-form {
+  font-family: "Montserrat", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.04em;
+}
+
+button {
+  width: 95px;
+  height: 40px;
+  background-color: #4E75FF; 
+  border: none;
+border-radius: 8px;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+transition: background-color 0.3s ease;
+
+}
+
+button:hover,
+button:focus {
+  background-color: #6C8CFF;
+}
