@@ -22,6 +22,7 @@ body {
   font-family: "Libertinus Mono", monospace;
     background: #F8AD7C;
     background: linear-gradient(350deg,rgba(248, 173, 124, 1) 0%, rgba(226, 222, 233, 1) 55%, rgba(225, 225, 240, 1) 65%, rgba(222, 232, 255, 1) 73%);
+    padding: 10px;
   }
 
 h1 {
